@@ -533,6 +533,17 @@
         grid-template-columns: repeat(3, 1fr);
         gap: 1.5rem;
       }
+      .case-preview {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: top;
+      }
+      .case-card:focus-visible {
+        outline: 3px solid var(--gold);
+        outline-offset: 4px;
+      }
       .case-card {
         position: relative;
         overflow: hidden;
@@ -1387,77 +1398,67 @@
         </div>
         <p>
           Explore selected UX, product and brand design case studies.
-          Cards name the associated organization; independent studies are labeled separately.
+          Six selected projects across Amazon, TBWA, Ringier AG, Foolproof, SBI Media and Wolff Olins.
           Open any card to view the full case study PDF.
         </p>
       </div>
 
       <div class="cases-grid">
-        <div class="case-card" id="case-1" data-pdf="Case Study Projects/Amazon Shopping App UX Case Study.pdf" data-title="Amazon — Amazon Shopping App UX" data-cat="Shopping app UX">
+        <div class="case-card" id="case-1" role="button" tabindex="0" aria-label="Open Amazon — Amazon Shopping App" data-pdf="Case Study Projects/Amazon Shopping App UX Case Study.pdf" data-title="Amazon — Amazon Shopping App" data-cat="Shopping app UX">
           <div class="case-thumb">
-            <div class="case-thumb-inner thumb-1">
-              <div style="position:relative;z-index:2;font-family:'Playfair Display',serif;font-size:clamp(2rem,4vw,3.5rem);font-weight:900;line-height:1.1;text-align:center;color:#faf7f2">AM<br />ZN</div>
-            </div>
+            <img class="case-preview" src="assets/case-studies/amazon.jpg" alt="Amazon Shopping App case study preview" width="900" height="600" loading="lazy" />
             <div class="case-hover-overlay"><div class="view-label"><div class="v-icon">↗</div><span>Open Case Study</span></div></div>
           </div>
           <div class="case-info">
             <div class="case-meta">Amazon · Shopping app UX</div>
-            <h3 class="case-title">Amazon Shopping App UX</h3>
-            <p class="case-desc">UX exploration of the Amazon shopping app, with interface designs presented in the full case study.</p>
+            <h3 class="case-title">Amazon Shopping App</h3>
+            <p class="case-desc">UX exploration of the Amazon shopping app, with shopping flows and interface designs presented in the full case study.</p>
             <div class="case-tags"><span class="tag">UX</span><span class="tag">Mobile</span><span class="tag">Shopping</span></div>
           </div>
         </div>
 
-        <div class="case-card" id="case-2" data-pdf="Case Study Projects/Energy Connection Case Study.pdf" data-title="Ringier AG — Energy Connection" data-cat="Product design">
+        <div class="case-card" id="case-2" role="button" tabindex="0" aria-label="Open TBWA — Starbucks Case Study" data-pdf="Case Study Projects/Starbucks Case Study.pdf" data-title="TBWA — Starbucks Case Study" data-cat="App redesign">
           <div class="case-thumb">
-            <div class="case-thumb-inner thumb-2">
-              <div style="position:relative;z-index:2;font-family:'Playfair Display',serif;font-size:clamp(2rem,4vw,3.5rem);font-weight:900;line-height:1.1;text-align:center;color:#2a2a2a">Energy</div>
-            </div>
+            <img class="case-preview" src="assets/case-studies/starbucks.jpg" alt="Starbucks Case Study case study preview" width="900" height="600" loading="lazy" />
+            <div class="case-hover-overlay"><div class="view-label"><div class="v-icon">↗</div><span>Open Case Study</span></div></div>
+          </div>
+          <div class="case-info">
+            <div class="case-meta">TBWA · App redesign</div>
+            <h3 class="case-title">Starbucks Case Study</h3>
+            <p class="case-desc">A Starbucks India app redesign study exploring menu discovery, registration, payments and ordering.</p>
+            <div class="case-tags"><span class="tag">Research</span><span class="tag">UX</span><span class="tag">Prototype</span></div>
+          </div>
+        </div>
+
+        <div class="case-card" id="case-3" role="button" tabindex="0" aria-label="Open Ringier AG — Energy Connection" data-pdf="Case Study Projects/Energy Connection Case Study.pdf" data-title="Ringier AG — Energy Connection" data-cat="Product design">
+          <div class="case-thumb">
+            <img class="case-preview" src="assets/case-studies/energy.jpg" alt="Energy Connection case study preview" width="900" height="600" loading="lazy" />
             <div class="case-hover-overlay"><div class="view-label"><div class="v-icon">↗</div><span>Open Case Study</span></div></div>
           </div>
           <div class="case-info">
             <div class="case-meta">Ringier AG · Product design</div>
             <h3 class="case-title">Energy Connection</h3>
-            <p class="case-desc">Explore the Energy Connection interface designs and project details in the full case study.</p>
+            <p class="case-desc">Energy Connection product design, presented through interface concepts and the complete project case study.</p>
             <div class="case-tags"><span class="tag">UX</span><span class="tag">UI</span><span class="tag">Product</span></div>
           </div>
         </div>
 
-        <div class="case-card" id="case-3" data-pdf="Case Study Projects/Walmart Case Study.pdf" data-title="Wolff Olins — Walmart Case Study" data-cat="Retail design">
+        <div class="case-card" id="case-4" role="button" tabindex="0" aria-label="Open Foolproof — GU Online Courses" data-pdf="Case Study Projects/GU Case Study for Online Courses iOS App.pdf" data-title="Foolproof — GU Online Courses" data-cat="iOS app design">
           <div class="case-thumb">
-            <div class="case-thumb-inner thumb-3">
-              <div style="position:relative;z-index:2;font-family:'Playfair Display',serif;font-size:clamp(2rem,4vw,3.5rem);font-weight:900;line-height:1.1;text-align:center;color:#faf7f2">Walmart</div>
-            </div>
-            <div class="case-hover-overlay"><div class="view-label"><div class="v-icon">↗</div><span>Open Case Study</span></div></div>
-          </div>
-          <div class="case-info">
-            <div class="case-meta">Wolff Olins · Retail design</div>
-            <h3 class="case-title">Walmart Case Study</h3>
-            <p class="case-desc">Explore the Walmart design work and project presentation in the complete case study.</p>
-            <div class="case-tags"><span class="tag">Retail</span><span class="tag">UX</span><span class="tag">UI</span></div>
-          </div>
-        </div>
-
-        <div class="case-card" id="case-4" data-pdf="Case Study Projects/GU Case Study for Online Courses iOS App.pdf" data-title="Foolproof — GU Online Courses" data-cat="iOS app design">
-          <div class="case-thumb">
-            <div class="case-thumb-inner thumb-4">
-              <div style="position:relative;z-index:2;font-family:'Playfair Display',serif;font-size:clamp(2rem,4vw,3.5rem);font-weight:900;line-height:1.1;text-align:center;color:#faf7f2">GU</div>
-            </div>
+            <img class="case-preview" src="assets/case-studies/gu.jpg" alt="GU Online Courses case study preview" width="900" height="600" loading="lazy" />
             <div class="case-hover-overlay"><div class="view-label"><div class="v-icon">↗</div><span>Open Case Study</span></div></div>
           </div>
           <div class="case-info">
             <div class="case-meta">Foolproof · iOS app design</div>
             <h3 class="case-title">GU Online Courses</h3>
-            <p class="case-desc">UI and UX design for the GU online courses iOS app.</p>
+            <p class="case-desc">UI and UX design for the GU online courses iOS app, including the learning experience and mobile interfaces.</p>
             <div class="case-tags"><span class="tag">iOS</span><span class="tag">UX</span><span class="tag">Learning</span></div>
           </div>
         </div>
 
-        <div class="case-card" id="case-5" data-pdf="case-studies/Brand Typography Systems.pdf" data-title="SBI Media — Brand Typography Systems" data-cat="Brand identity">
+        <div class="case-card" id="case-5" role="button" tabindex="0" aria-label="Open SBI Media — Brand Typography Systems" data-pdf="case-studies/Brand Typography Systems.pdf" data-title="SBI Media — Brand Typography Systems" data-cat="Brand identity">
           <div class="case-thumb">
-            <div class="case-thumb-inner thumb-5">
-              <div style="position:relative;z-index:2;font-family:'Playfair Display',serif;font-size:clamp(2rem,4vw,3.5rem);font-weight:900;line-height:1.1;text-align:center;color:#2a2a2a">Aa</div>
-            </div>
+            <div class="case-thumb-inner thumb-5"><div class="t-type"><div class="t-label">Type · Systems · Identity</div></div></div>
             <div class="case-hover-overlay"><div class="view-label"><div class="v-icon">↗</div><span>Open Case Study</span></div></div>
           </div>
           <div class="case-info">
@@ -1468,16 +1469,16 @@
           </div>
         </div>
 
-        <div class="case-card" id="case-independent" data-pdf="Case Study Projects/Starbucks Case Study.pdf" data-title="Starbucks App Revamp — Independent Study" data-cat="Independent UX study">
+        <div class="case-card" id="case-6" role="button" tabindex="0" aria-label="Open Wolff Olins — Walmart Case Study" data-pdf="Case Study Projects/Walmart Case Study.pdf" data-title="Wolff Olins — Walmart Case Study" data-cat="Retail design">
           <div class="case-thumb">
-            <div class="case-thumb-inner thumb-6"><div style="position:relative;z-index:2;font-family:'Playfair Display',serif;font-size:clamp(2rem,4vw,3.5rem);font-weight:900;color:#faf7f2">Starbucks</div></div>
+            <img class="case-preview" src="assets/case-studies/walmart.jpg" alt="Walmart Case Study case study preview" width="900" height="600" loading="lazy" />
             <div class="case-hover-overlay"><div class="view-label"><div class="v-icon">↗</div><span>Open Case Study</span></div></div>
           </div>
           <div class="case-info">
-            <div class="case-meta">Independent UX study</div>
-            <h3 class="case-title">Starbucks App Revamp</h3>
-            <p class="case-desc">Independent redesign exploring menu discovery, registration, payments and ordering in the Starbucks India app.</p>
-            <div class="case-tags"><span class="tag">Research</span><span class="tag">UX</span><span class="tag">Prototype</span></div>
+            <div class="case-meta">Wolff Olins · Retail design</div>
+            <h3 class="case-title">Walmart Case Study</h3>
+            <p class="case-desc">A Walmart retail experience redesign, with the design approach and interface work presented in the full case study.</p>
+            <div class="case-tags"><span class="tag">Retail</span><span class="tag">UX</span><span class="tag">UI</span></div>
           </div>
         </div>
       </div>
@@ -1688,22 +1689,12 @@
             class="contact-item"
             href="https://linkedin.com/in/henry-o-3021a7263/"
             target="_blank"
+            rel="noopener noreferrer"
           >
             <span class="ci-icon">in</span>
             <div class="ci-content">
               <span class="ci-label">LinkedIn</span>
               <span class="ci-value">henry-o-3021a7263</span>
-            </div>
-          </a>
-          <a
-            class="contact-item"
-            href="https://behance.net/henry-oyibotha"
-            target="_blank"
-          >
-            <span class="ci-icon">Bē</span>
-            <div class="ci-content">
-              <span class="ci-label">Portfolio</span>
-              <span class="ci-value">behance.net/henry-oyibotha</span>
             </div>
           </a>
           <div class="contact-item" style="cursor: default">
@@ -1898,14 +1889,19 @@
       }
 
       document.querySelectorAll(".case-card").forEach((card) => {
+        card.addEventListener("keydown", (event) => {
+          if (event.key === "Enter" || event.key === " ") {
+            event.preventDefault();
+            card.click();
+          }
+        });
         card.addEventListener("click", () => {
-          const pdf = card.dataset.pdf;
+          const pdf = encodeURI(card.dataset.pdf);
           const title = card.dataset.title;
           const cat = card.dataset.cat;
           modalTitle.textContent = title;
           modalCat.textContent = cat;
-          modalSubtitle.textContent =
-            "Henry Oyibotha · Principal Product Designer · Dallas, TX";
+          modalSubtitle.textContent = card.querySelector(".case-desc").textContent;
           pdfTitle.textContent = title;
           pdfPath.textContent = pdf;
           pdfOpenBtn.href = pdf;
